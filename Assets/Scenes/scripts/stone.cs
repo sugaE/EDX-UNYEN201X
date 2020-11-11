@@ -18,7 +18,7 @@ public class stone : MonoBehaviour
     {
         if (transform.position.y < -1.0f)
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }
