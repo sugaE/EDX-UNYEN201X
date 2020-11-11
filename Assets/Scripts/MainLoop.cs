@@ -53,6 +53,7 @@ public class MainLoop : MonoBehaviour
             rb.AddForce(Vector3.up * Random.Range(minAntiGravity, maxAntiGravity), ForceMode.Impulse);
             rb.AddForce(Vector3.right * Random.Range(minLateralForce, maxLateralForce), ForceMode.Impulse);
 
+            GameManager.currentNumberStonesThrone++;
 
             yield return new WaitForSeconds(Random.Range(minTimeBetweenStones, maxTimeBetweenStones));
 

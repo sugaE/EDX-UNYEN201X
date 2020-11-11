@@ -29,5 +29,6 @@ public class Stone : MonoBehaviour
     {
         Destroy(Instantiate(explosion, transform.position, Quaternion.identity), 2.0f);
         Destroy(gameObject);
+        GameManager.currentNumberStonesDestroyed--;
     }
 }
