@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/stoneGame.unity
+    guid: a674b72a7fe9d43ebb1bed8f2d79df98
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: a306feaf807c44634a3b08b8afa31610
+  - enabled: 1
+    path: Assets/Scenes/Awake.unity
+    guid: d234400bfad514ce88f366253d2cda7d
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3936ddec9e4994ac6a05de0b9da53eb6,
       type: 2}

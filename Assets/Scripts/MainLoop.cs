@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MainLoop : MonoBehaviour
@@ -37,6 +38,11 @@ public class MainLoop : MonoBehaviour
 
         while (enableStones)
         {
+
+            if (GameManager.currentNumberStonesThrone == 20)
+            {
+                SceneManager.LoadScene("Final");
+            }
 
 
             GameObject stone = (GameObject)Instantiate(stones[Random.Range(0, stones.Length)]);
